@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Cookies from "universal-cookie";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import data from "./components/ProductJson.json";
@@ -120,7 +120,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <HashRouter>
         <div className="App">
           <Navbar
             itemList={this.state.data}
@@ -188,7 +188,7 @@ class App extends Component {
             />
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }
