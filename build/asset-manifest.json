@@ -1,6 +1,5 @@
 {
   "files": {
-<<<<<<< HEAD
     "main.css": "e-commerce-cart-react/static/css/main.5f361e03.chunk.css",
     "main.js": "e-commerce-cart-react/static/js/main.f1c8843a.chunk.js",
     "main.js.map": "e-commerce-cart-react/static/js/main.f1c8843a.chunk.js.map",
@@ -13,7 +12,6 @@
     "service-worker.js": "e-commerce-cart-react/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "e-commerce-cart-react/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.9acecf36.chunk.js.LICENSE.txt": "e-commerce-cart-react/static/js/2.9acecf36.chunk.js.LICENSE.txt"
-=======
     "main.css": "https//:MoinulHossainNabil.github.io/e-commerce-cart-react/static/css/main.5f361e03.chunk.css",
     "main.js": "https//:MoinulHossainNabil.github.io/e-commerce-cart-react/static/js/main.f1c8843a.chunk.js",
     "main.js.map": "https//:MoinulHossainNabil.github.io/e-commerce-cart-react/static/js/main.f1c8843a.chunk.js.map",
@@ -26,7 +24,6 @@
     "service-worker.js": "https//:MoinulHossainNabil.github.io/e-commerce-cart-react/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "https//:MoinulHossainNabil.github.io/e-commerce-cart-react/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.9acecf36.chunk.js.LICENSE.txt": "https//:MoinulHossainNabil.github.io/e-commerce-cart-react/static/js/2.9acecf36.chunk.js.LICENSE.txt"
->>>>>>> 8700fb526c8d82b5f69190f7a544baf858c94550
   },
   "entrypoints": [
     "static/js/runtime-main.7bc7b824.js",
