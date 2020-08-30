@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "category": "jeans",
+    "name": "Ripped jeans",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7RsSQqMqXHAMi1LFp1R91mRJhkeua82yblg&usqp=CAU",
+    "size": "XL",
+    "color": "blue",
+    "price": 20.99
+  },
+  {
+    "id": 2,
+    "category": "jeans",
+    "name": "Boyfriend Jeans",
+    "image": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "size": "S",
+    "color": "blue",
+    "price": 24.99
+  },
+  {
+    "id": 3,
+    "category": "jackets",
+    "name": "Denim Jacket",
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "size": "M",
+    "color": "grey",
+    "price": 40.99
+  },
+  {
+    "id": 4,
+    "category": "shirts",
+    "name": "Ripped sweatshirt",
+    "image": "https://cdn.shopify.com/s/files/1/1459/0178/products/dark-blue-1_1024x1024.gif?v=1562231452",
+    "size": "XL",
+    "color": "white",
+    "price": 29.99
+  },
+  {
+    "id": 5,
+    "category": "jackets",
+    "name": "Denim Smart Jacket",
+    "image": "https://cache.mrporter.com/variants/images/10375442618850077/in/w2000_q80.jpg",
+    "size": "M",
+    "color": "grey",
+    "price": 40.99
+  },
+  {
+    "id": 6,
+    "category": "jeans",
+    "name": "Viking Jeans",
+    "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "size": "S",
+    "color": "blue",
+    "price": 24.99
+  },
+  {
+    "id": 7,
+    "category": "shirts",
+    "name": "Smart Sweatshirt",
+    "image": "https://images.unsplash.com/photo-1542060748-10c28b62716f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "size": "XL",
+    "color": "white",
+    "price": 29.99
+  }
+]
