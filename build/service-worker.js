@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/https//:MoinulHossainNabil.github.io/e-commerce-cart-react/precache-manifest.e417f4ade6d756719b8f82d7dcfec1e4.js"
+  "/https//:moinulhossainnabil.github.io/e-commerce-cart-react/precache-manifest.369a7a572bf5a8308cc5dd39e333c84d.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/https//:MoinulHossainNabil.github.io/e-commerce-cart-react/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/https//:moinulhossainnabil.github.io/e-commerce-cart-react/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
