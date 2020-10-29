@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .item-image {
+    width: 64px;
+    height: 64px;
+  }
+  .item-price, .item-name {
+    font-size: small;
+  }
+
+}
+@media only screen and (max-width: 260px) {
+  .item-image {
+    width: 54px;
+    height: 54px;
+  }
+  .order-summary {
+    margin-top: 25px;
+  }
+
+}
+@media only screen and (max-width: 247px) {
+  .cart-items {
+    flex-direction: column;
+  }
+  .order-summary {
+    margin-top: 25px;
+  }
+
+}

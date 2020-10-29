@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function OrderSummary({ state, cost }) {
   return (
-    <div className="col-md-4 order-summary" style={{ height: "220px" }}>
+    <div className="col-sm-12 col-md-12 col-lg-4 order-summary mt-md-4 mt-sm-4 mt-lg-0" style={{ height: "220px" }}>
       <h6>Summary</h6>
       <ul className="list-group">
         <li className="list-group-item d-flex justify-content-between align-items-center">

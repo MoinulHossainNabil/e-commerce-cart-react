@@ -3,10 +3,10 @@ import React from "react";
 export default function Orders({ orders, addToCart, decrement, deleteItem }) {
   const orderItems = orders.map((item) => (
     <div
-      className="row single-item align-items-center justify-content"
+      className="row d-flex justify-content-around cart-items"
       key={item.id}
     >
-      <div className="col-md-2 item-image">
+      <div className="item-image">
         <img
           src={item.image}
           className="img-fluid"
@@ -14,8 +14,8 @@ export default function Orders({ orders, addToCart, decrement, deleteItem }) {
           alt=""
         ></img>
       </div>
-      <div className="col-md-2 item-name">{item.name}</div>
-      <div className="col-md-2 item-remove">
+      <div className="item-name">{item.name}</div>
+      <div className="item-remove">
         <i
           className="fa fa-minus font-weight-bold text-danger"
           onClick={() => decrement(item)}
@@ -23,7 +23,7 @@ export default function Orders({ orders, addToCart, decrement, deleteItem }) {
           role="button"
         ></i>
         &nbsp;
-        <span>{item.quantity}</span>
+        <span className="quantity">{item.quantity}</span>
         &nbsp;
         <i
           className="fa fa-plus font-weight-bold text-success"
@@ -31,8 +31,8 @@ export default function Orders({ orders, addToCart, decrement, deleteItem }) {
           role="button"
         ></i>
       </div>
-      <div className="col-md-2 item-price">$ {item.price}</div>
-      <div className="col-md-1 item-price">
+      <div className="item-price">$ {item.price}</div>
+      <div className="item-price">
         <i
           className="fa fa-trash-o text-danger"
           aria-hidden="true"

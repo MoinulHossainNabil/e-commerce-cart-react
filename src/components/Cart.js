@@ -46,7 +46,7 @@ export default function Cart({
         <hr></hr>
 
         <div className="row">
-          <div className="col-md-8 order-list">
+          <div className="col-sm-12 col-md-12 col-lg-8 order-list">
             {/* Order Details Component */}
             <Orders
               orders={orders}

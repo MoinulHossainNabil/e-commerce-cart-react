@@ -13,17 +13,22 @@ export default function Navbar({
   const [searchKey, setSearch] = useState("");
   const [items, filterItems] = useState([]);
 
+  const filterDataByKey = (key) => {
+    let filteredData = itemList.filter((item) =>
+      item.name.toLowerCase().includes(key.toLowerCase())
+    );
+    return filteredData;
+  };
+
   const changeHandler = (event) => {
     document.getElementById("filter").style.display = "block";
     setSearch(event.target.value);
-    let filteredData = itemList.filter((item) =>
-      item.name.toLowerCase().includes(searchKey.toLowerCase())
-    );
+    let filteredData = filterDataByKey(event.target.value);
     filterItems(filteredData);
 
     // Have to fix this !! The state updates but the onchange starts after click 2..
 
-    if (searchKey.length < 2) {
+    if (event.target.value === "") {
       document.getElementById("filter").style.display = "none";
       filterItems([]);
     }
@@ -35,7 +40,7 @@ export default function Navbar({
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid ">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <span className="navbar-brand">React Cart App</span>
         <button
@@ -93,6 +98,11 @@ export default function Navbar({
         </div>
       </nav>
       <FilterComponent filteredItems={items} setSearch={setSearchNull} />
+      <div className="container-fluid">
+        <div className="row mt-3" id="alertMessage">
+          
+        </div>
+      </div>
     </div>
   );
 }

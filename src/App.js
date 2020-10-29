@@ -18,7 +18,7 @@ class App extends Component {
     this.state = {
       data: [],
       orders: [],
-      category: ["jeans", "shirts", "jackets"],
+      category: ["All", "jeans", "shirts", "jackets"],
     };
     this.expireDate = new Date(
       new Date().setFullYear(new Date().getFullYear() + 1)
@@ -65,6 +65,7 @@ class App extends Component {
         orders: items,
       });
       this.setCookie("product", items, this.expireDate);
+      this.showAlert("success", "Item Has Been Added To The Cart");
     } else {
       const newOrders = this.state.orders.map((order) => {
         if (order.id === orderedItem.id) {
@@ -76,6 +77,7 @@ class App extends Component {
         orders: newOrders,
       });
       this.setCookie("product", this.state.orders, this.expireDate);
+      this.showAlert("success", "Item Quantity Has Been Increased");
     }
   };
 
@@ -100,11 +102,13 @@ class App extends Component {
         orders: updatedOrder,
       });
       this.setCookie("product", updatedOrder, this.expireDate);
+      this.showAlert("danger", "Item Has Been Removed From The Cart");
     } else {
       this.setState({
         order: newOrders,
       });
       this.setCookie("product", newOrders);
+      this.showAlert("warning", "Item Quantity Has Been Decreased");
     }
   };
 
@@ -116,7 +120,29 @@ class App extends Component {
       orders: updatedOrder,
     });
     this.setCookie("product", updatedOrder, this.expireDate);
+    this.showAlert('danger', 'Item has been removed from the cart');
   };
+
+  showAlert = (type, message) => {
+  let alert = document.getElementById("alertMessage");
+  let alertDiv = document.createElement('div');
+  alertDiv.className = `col-12 alert alert-${type} alert-dismissible fade show`;
+  alertDiv.setAttribute("role", "alert");
+  let alertStrong = document.createElement('strong');
+  alertStrong.innerHTML = (`${message}`);
+  let alertBtn = document.createElement('button');
+  alertBtn.setAttribute("type", "button");
+  alertBtn.setAttribute("class", "close");
+  alertBtn.setAttribute("data-dismiss", "alert");
+  alertBtn.setAttribute("arial-label", "close");
+  let alertSpan = document.createElement('span');
+  alertSpan.setAttribute("arial-hidden", "true");
+  alertSpan.innerHTML = "&times";
+  alertDiv.appendChild(alertStrong);
+  alertDiv.appendChild(alertBtn);
+  alertBtn.appendChild(alertSpan);
+  alert.appendChild(alertDiv);
+  }
 
   render() {
     return (
