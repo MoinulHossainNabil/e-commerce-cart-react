@@ -3,7 +3,7 @@ import React from "react";
 export default function Orders({ orders, addToCart, decrement, deleteItem }) {
   const orderItems = orders.map((item) => (
     <div
-      className="row d-flex justify-content-around cart-items"
+      className="row d-flex align-items-center justify-content-between cart-items my-2"
       key={item.id}
     >
       <div className="item-image">
@@ -15,7 +15,7 @@ export default function Orders({ orders, addToCart, decrement, deleteItem }) {
         ></img>
       </div>
       <div className="item-name">{item.name}</div>
-      <div className="item-remove">
+      <div className="item-remove d-flex align-items-center justify-content-between">
         <i
           className="fa fa-minus font-weight-bold text-danger"
           onClick={() => decrement(item)}

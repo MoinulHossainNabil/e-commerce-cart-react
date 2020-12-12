@@ -46,7 +46,7 @@ export default function Cart({
         <hr></hr>
 
         <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-8 order-list">
+          <div className="col-12 order-list">
             {/* Order Details Component */}
             <Orders
               orders={orders}
@@ -55,10 +55,10 @@ export default function Cart({
               deleteItem={deleteItem}
             />
           </div>
-
-          {/* Order Summary */}
-          <OrderSummary cost={totalCost} />
         </div>
+        <hr></hr>
+        {/* Order Summary */}
+        <OrderSummary cost={totalCost} />
       </div>
     );
   }
